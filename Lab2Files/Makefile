@@ -1,4 +1,4 @@
-all:hello_world arguments cpu fork_test wait_test zombie test1
+all:hello_world arguments cpu fork_test wait_test zombie test1 test2
 hello_world:hello_world.c
 	gcc hello_world.c -Wall -Wextra -pedantic -o hello_world
 arguments:arguments.c
@@ -13,5 +13,7 @@ zombie:zombie.c
 	gcc zombie.c -Wall -Wextra -pedantic -o zombie
 test1:test1.c
 	gcc test1.c -Wall -Wextra -pedantic -o test1
+test2:test2.c
+	gcc test2.c -Wall -Wextra -pedantic -o test2
 clean:
-	rm -f hello_world arguments fork_test zombie test1
+	rm -f hello_world arguments fork_test zombie test1 test2
